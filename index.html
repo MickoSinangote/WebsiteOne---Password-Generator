@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="display-screen">
+      <p class="password"></p>
+    </div>
+    <label for="slide">Password Length:</label>
+    <br>
+    <input type="range" class="slide" name="temp" list="values" min="4" max="16">
+    <div class="container2">
+      <datalist id="values">
+        <option value="4" label="4"></option>
+        <option value="5" label="5"></option>
+        <option value="6" label="6"></option>
+        <option value="7" label="7"></option>
+        <option value="8" label="8"></option>
+        <option value="9" label="9"></option>
+        <option value="10" label="10"></option>
+        <option value="11" label="11"></option>
+        <option value="12" label="12"></option>
+        <option value="13" label="13"></option>
+        <option value="14" label="14"></option>
+        <option value="13" label="15"></option>
+        <option value="14" label="16"></option>
+      </datalist>
+    </div>
+    
+    <div class="container2">
+      <label for="checkbox2"> UpperCase </label>
+      <input type="checkbox" id="checkbox2">
+      <label for="checkbox3"> LowerCase </label>
+      <input type="checkbox" id="checkbox3">
+      <label for="checkbox4"> Numbers </label>
+      <input type="checkbox" id="checkbox4">
+      <label for="checkbox5"> Symbols </label>
+      <input type="checkbox" id="checkbox5">
+    </div>
+    <input type="button" class="button1" value="Generate Password" onclick="generatePass()">
+    <input type="button" class="button2" value="Clear" onclick="clearPass()">
+    <input type="button" class="button3" value="COPY📄" onclick="copyClipboard()">
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
