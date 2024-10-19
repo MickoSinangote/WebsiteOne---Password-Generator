@@ -11,7 +11,7 @@ function generatePass() {
   const passLength = Number(document.querySelector(".slide").value);
   const result = document.querySelector(".password").innerText;
 
-  let allPass = [];
+  let allPass = "";
 
   let pass = [];
 
